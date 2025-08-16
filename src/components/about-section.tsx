@@ -88,7 +88,7 @@ export function AboutSection() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.8 }}
                 >
-                  I am a passionate MERN Stack Developer with ~1.5 years of
+                  I am a passionate MERN Stack Developer with ~ 2.5 years of
                   professional experience, currently working at{" "}
                   <span className="text-primary font-semibold">
                     Micropillar Infotech
