@@ -1,7 +1,7 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react"
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-navy text-white py-12">
@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Yash Talaviya</h3>
             <p className="text-blue-200 text-sm leading-relaxed">
-              MERN Stack Developer crafting modern, scalable web applications. 
+              MERN Stack Developer crafting modern, scalable web applications.
               Passionate about clean code and innovative solutions.
             </p>
           </div>
@@ -20,21 +20,25 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {['About', 'Experience', 'Skills', 'Projects', 'Contact'].map((item) => (
-                <li key={item}>
-                  <button
-                    onClick={() => {
-                      const element = document.getElementById(item.toLowerCase())
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' })
-                      }
-                    }}
-                    className="text-blue-200 hover:text-white transition-smooth text-sm"
-                  >
-                    {item}
-                  </button>
-                </li>
-              ))}
+              {["About", "Experience", "Skills", "Projects", "Contact"].map(
+                (item) => (
+                  <li key={item}>
+                    <button
+                      onClick={() => {
+                        const element = document.getElementById(
+                          item.toLowerCase()
+                        );
+                        if (element) {
+                          element.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
+                      className="text-blue-200 hover:text-white transition-smooth text-sm"
+                    >
+                      {item}
+                    </button>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 
@@ -65,9 +69,7 @@ export function Footer() {
                 <Mail className="h-5 w-5" />
               </a>
             </div>
-            <p className="text-blue-200 text-sm">
-              yashtalaviya654@gmail.com
-            </p>
+            <p className="text-blue-200 text-sm">yashtalaviya654@gmail.com</p>
           </div>
         </div>
 
@@ -77,10 +79,10 @@ export function Footer() {
             © {currentYear} Yash Talaviya. All rights reserved.
           </p>
           <p className="text-blue-200 text-sm flex items-center mt-2 sm:mt-0">
-            Made with <Heart className="h-4 w-4 mx-1 text-red-400" /> using React & TypeScript
+            {/* Made with <Heart className="h-4 w-4 mx-1 text-red-400" /> using React & TypeScript */}
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
