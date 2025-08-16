@@ -176,7 +176,7 @@ export function ContactSection() {
           </Card> */}
 
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="gap-4 flex flex-row flex-wrap justify-center">
             <Card className="shadow-card">
               <CardContent className="p-8">
                 <h3 className="text-xl font-semibold text-foreground mb-6">
